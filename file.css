@@ -122,7 +122,6 @@ nav a:hover {
   background: #ffffff;
   font-size: 1rem;
 }
-
 .contact input:focus,
 .contact textarea:focus {
   outline: none;
