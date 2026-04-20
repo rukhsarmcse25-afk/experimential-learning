@@ -183,3 +183,13 @@ nav a:hover {
   .contact form {
     gap: 18px;
   }
+
+.team-container,
+  .contact form {
+    gap: 18px;
+  }
+
+.card {
+    width: 100%;
+  }
+}
