@@ -179,3 +179,7 @@ nav a:hover {
     font-size: 16px;
   }
 
+  .team-container,
+  .contact form {
+    gap: 18px;
+  }
