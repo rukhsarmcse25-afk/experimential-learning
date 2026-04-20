@@ -149,7 +149,6 @@ nav a:hover {
   background: #111827;
   transform: translateY(-2px);
 }
-
 @media (max-width: 768px) {
   nav {
     padding: 12px 18px;
