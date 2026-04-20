@@ -4,13 +4,11 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
 body {
   background: linear-gradient(180deg, #f6f8fb 0%, #ffffff 100%);
   color: #222;
   line-height: 1.6;
 }
-
 nav {
   position: sticky;
   top: 0;
