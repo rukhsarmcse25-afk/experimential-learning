@@ -25,3 +25,15 @@ nav {
 nav a:hover {
   color: #facc15;
 }
+
+.hero {
+  min-height: 420px;
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
