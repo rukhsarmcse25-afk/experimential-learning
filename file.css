@@ -82,3 +82,11 @@ nav a:hover {
   margin-bottom: 20px;
   color: #111827;
 }
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
