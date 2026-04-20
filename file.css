@@ -130,3 +130,13 @@ nav a:hover {
   align-items: center;
   gap: 14px;
 }
+
+.contact input,
+.contact textarea {
+  width: min(640px, 100%);
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: 1rem;
+}
