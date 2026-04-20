@@ -21,3 +21,7 @@ nav {
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
+nav a:hover {
+  color: #facc15;
+}
