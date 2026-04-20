@@ -43,3 +43,10 @@ nav a:hover {
   margin-bottom: 15px;
   max-width: 900px;
 }
+
+.hero p {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  margin-bottom: 25px;
+  max-width: 720px;
+  color: rgba(248, 250, 252, 0.85);
+}
