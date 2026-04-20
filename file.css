@@ -10,3 +10,14 @@ body {
   color: #222;
   line-height: 1.6;
 }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #1f2937;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
