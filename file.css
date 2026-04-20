@@ -133,6 +133,10 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+.contact {
+  background: #f8fafc;
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
@@ -148,12 +152,6 @@ nav a:hover {
   border-radius: 12px;
   background: #ffffff;
   font-size: 1rem;
-}
-.contact input:focus,
-.contact textarea:focus {
-  outline: none;
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
 }
 
 .contact input:focus,
