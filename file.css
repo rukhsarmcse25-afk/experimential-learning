@@ -123,3 +123,10 @@ nav a:hover {
   color: #4b5563;
   margin-bottom: 10px;
 }
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
