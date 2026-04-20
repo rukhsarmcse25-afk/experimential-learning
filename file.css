@@ -19,11 +19,9 @@ nav {
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-
 nav a:hover {
   color: #facc15;
 }
-
 .hero {
   min-height: 420px;
   background: #0f172a;
