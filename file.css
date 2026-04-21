@@ -137,39 +137,6 @@ nav a:hover {
   background: #f8fafc;
 }
 
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-}
-
-.contact input,
-.contact textarea {
-  width: min(640px, 100%);
-  padding: 14px 16px;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  background: #ffffff;
-  font-size: 1rem;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-  outline: none;
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
-}
-
-.contact button {
-  padding: 14px 26px;
-  background: #0f172a;
-  color: white;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
 
 .contact-section form {
   display: flex;
