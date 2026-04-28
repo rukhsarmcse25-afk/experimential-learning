@@ -1,59 +1,222 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Precision Tools Inc.</title>
-  <link rel="stylesheet"href="file.css">
+  <title>Precision Tools Inc.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="exp.css">
 </head>
-  <body>
-    
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#team">Team</a>
-<a href="#contact">Contact</a>
-</nav>
-    
-<div class="hero">
-<h1>Welcome to Precision Tools Inc.</h1>
-<p>Leading innovation in manufacturing.</p>
-<button>Learn More</button>
-</div>
-    
-<div class="team" id="team">
-<h2>Meet Our Team</h2>
-<div class="team-container">
-  
-<div class="card">
-<img src="ceo.jpg">
-<h3>Adam Smith</h3>
-<p>CEO</p>
-<p>Leading innovation in manufacturing.</p>
-</div>
-  
-<div class="card">
-<img src="manager.jpg">
-<h3>James William</h3>
-<p>Operations Manager</p>
-<p>Ensuring smooth production processes.</p>
-</div>
-  
-</div>
-</div>
-  
-      
-  <div class="contact-section">
-    
-   <h2>Contact Us</h2>
+<body>
 
-<form>
-<input type="text" placeholder="Your Name"><br>
-<input type="email" placeholder="Your Email"><br>
-<textarea rows="4" placeholder="Your Message"></textarea><br>
-<button type="submit">Send Message</button>
-  
-</form>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="#"> Precision Tools</a>
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
+</nav>
 
-  
+<div class="hero">
+  <h1>Welcome to Precision Tools Inc.</h1>
+  <p>Leading innovation in manufacturing.</p>
+  <button id="learnMoreBtn">Learn More</button>
+</div>
+
+<div id="learnMoreAlert" class="alert alert-info alert-dismissible text-center m-3 d-none">
+   We manufacture high-precision tools for industries worldwide since 2000!
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+</div>
+
+<div class="container py-5" id="about">
+  <div class="row align-items-center g-4">
+    <div class="col-12 col-md-6">
+      <h2 class="fw-bold mb-3">About Us</h2>
+      <p class="text-muted">
+        Precision Tools Inc. is a global leader in manufacturing high-quality
+        industrial tools. With over 25 years of experience, we serve clients
+        across 20+ countries with unmatched precision and reliability.
+      </p>
+      <ul class="list-unstyled mt-3">
+        <li>  ISO Certified Manufacturing</li>
+        <li>  25+ Years of Experience</li>
+        <li>  20+ Countries Served</li>
+        <li>  15,000+ Happy Clients</li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-6 text-center">
+      <div class="bg-dark text-white rounded-4 p-4">
+        <h4 class="text-warning">Our Mission</h4>
+        <p class="text-white-50">
+          To deliver world-class precision tools that empower industries
+          to build a better tomorrow.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="counter-section">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3 counter-box">
+        <h2 id="c1">25+</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="col-6 col-md-3 counter-box">
+        <h2 id="c2">20+</h2>
+        <p>Countries Served</p>
+      </div>
+      <div class="col-6 col-md-3 counter-box">
+        <h2 id="c3">15000+</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div class="col-6 col-md-3 counter-box">
+        <h2 id="c4">10000+</h2>
+        <p>Products Made</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center py-5" id="team">
+  <h2 class="fw-bold mb-2">Meet Our Team</h2>
+  <p class="text-muted mb-4">The people behind our success</p>
+  <div class="row justify-content-center g-4">
+
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card shadow border-0 h-100">
+        <img src="ceo.jpg" class="card-img-top" alt="CEO">
+        <div class="card-body">
+          <h3 class="card-title fs-5">Adam Smith</h3>
+          <p class="text-muted mb-1">CEO</p>
+          <p class="text-secondary small">Leading innovation in manufacturing.</p>
+          <button class="btn btn-outline-dark btn-sm mt-2"
+            onclick="showProfile('Adam Smith', 'CEO', 'Visionary leader with 20+ years of experience.')">
+            View Profile
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card shadow border-0 h-100">
+        <img src="manager.jpg" class="card-img-top" alt="Manager">
+        <div class="card-body">
+          <h3 class="card-title fs-5">James William</h3>
+          <p class="text-muted mb-1">Operations Manager</p>
+          <p class="text-secondary small">Ensuring smooth production processes.</p>
+          <button class="btn btn-outline-dark btn-sm mt-2"
+            onclick="showProfile('James William', 'Operations Manager', 'Expert in streamlining manufacturing workflows.')">
+            View Profile
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="profileModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="modalName"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center p-4">
+        <span class="badge bg-secondary mb-3" id="modalRole"></span>
+        <p id="modalBio" class="text-muted"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-dark w-100" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light py-5" id="contact">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-2">Contact Us</h2>
+    <p class="text-center text-muted mb-4">24/7 Available</p>
+
+    <div id="successMsg" class="alert alert-success text-center d-none">
+      Message is gone  we will reach you emmediately.
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-7">
+        <form id="contactForm">
+          <div class="mb-3">
+            <input type="text" id="userName" class="form-control form-control-lg" placeholder="Your Name">
+            <div class="error-text" id="nameError"> Write Name</div>
+          </div>
+          <div class="mb-3">
+            <input type="email" id="userEmail" class="form-control form-control-lg" placeholder="Your Email">
+            <div class="error-text" id="emailError"> Write Email</div>
+          </div>
+          <div class="mb-3">
+            <textarea id="userMessage" class="form-control" rows="5" placeholder="Your Message"></textarea>
+            <div class="error-text" id="msgError"> Message must not be empty</div>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-dark btn-lg"> Send Message </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <h5> Precision Tools Inc.</h5>
+        <p>High-quality industrial tools manufacturer since 2000.</p>
+        <p>Address: 123 Industrial Area, Nagpur, India</p>
+        <p>Phone No.: +91 98765 43210</p>
+        <p>Email: info@precisiontoolsinc.com</p>
+      </div>
+      <div class="col-6 col-md-2">
+        <h5>Quick Links</h5>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>Our Services</h5>
+        <a href="#">Precision Cutting Tools</a>
+        <a href="#">Industrial Equipment</a>
+        <a href="#">Custom Manufacturing</a>
+        <a href="#">Quality Testing</a>
+      </div>
+      <div class="col-12 col-md-3">
+        <h5>Follow Us</h5>
+        <a href="#"> Facebook</a>
+        <a href="#"> LinkedIn</a>
+        <a href="#"> Twitter</a>
+        <a href="#"> Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026Precision Tools Inc. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" title="Top pe jao">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
